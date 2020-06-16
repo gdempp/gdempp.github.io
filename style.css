@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css?family=Akronim|Cinzel|Lobster|Roboto+Slab|Staatliches|Just+Another+Hand');
+@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Roboto Slab";
+}
+
+#mobileHeaderContainer {
+  display: none;
+}
+
+.navBar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 12%;
+  background: rgba(	63, 181, 161,0.8);
+  z-index: 100;
+
+}
+
+.navLogo {
+  background: url("./images/GDLogo02.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 100%;
+  min-width: 100px;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.navBar a {
+  font-family: "Staatliches";
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #444;
+  text-decoration: none;
+  transition: all 0.2s;
+  min-width: 100px;
+  text-align: center;
+  height: 100%;
+  min-width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navBar a:hover {
+  background: #333;
+  color: #fff;
+}
+#homeNav:hover {
+  color: #3F51B5;
+}
+#aboutNav:hover {
+  color: #E91E63;
+}
+#venturesNav:hover {
+  color: #2196F3;
+}
+
+.container {
+
+  min-height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+.header {
+
+  background: url("./images/headerBG.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position:left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+
+
+}
+
+.header h1 {
+  margin: 0;
+  font-family: "Akronim";
+  font-weight: bold;
+  font-size: 4em;
+  color: #fff;
+  background: #3F51B5;
+  padding: 40px;
+  border-radius: 5px;
+}
+.header p {
+  font-family: "Cinzel";
+  color: #222;
+  font-size: 1.2em;
+  font-weight: bold;
+
+}
+
+.subsection {
+  display: flex;
+  height: 100vh;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.title h1{
+
+  font-family: "Staatliches";
+  text-transform: uppercase;
+  font-size: 60pt;
+  color: #fff;
+}
+
+.animContainer {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+
+
+}
+
+.perspAnimation {
+  color: #333;
+}
+
+.line {
+  font-size: 50px;
+  line-height: 1.2em;
+  height: 1.2em;
+  background: #3F51B5;
+  overflow: hidden;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.line p{
+  margin:0;
+  font-family: "Bungee";
+  text-transform: uppercase;
+  cursor: default;
+}
+
+.line div {
+  margin-top: 0;
+  transition: all 0.5s;
+}
+
+.line:nth-child(1){
+
+  transform: skewX(30deg);
+  background: #F44336;
+
+}
+
+.line:nth-child(2){
+  transform: translateX(17px);
+}
+.line:nth-child(3){
+  transform: skew(20deg) translateX(28px);
+  background: rgba(	63, 181, 161,0.8);
+}
+.line:nth-child(4){
+  transform: translateX(39px);
+}
+.line:nth-child(5){
+  transform: skew(20deg) translateX(50px);
+  background: #F44336;
+}
+
+.line:nth-child(5) p:last-child {
+  color: #fff;
+}
+
+.perspAnimation:hover .line div {
+  margin-top: -1.2em;
+}
+
+.addition {
+
+  padding: 40px;
+  color: #fff;
+  font-family: "Just Another Hand";
+  font-size: 30pt;
+  position: relative;
+
+}
+
+.addIcon {
+
+  background: pink;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 10%;
+  margin-left:100%;
+
+}
+
+
+
+#aboutSection .title {
+  background: url("./images/Section1BG.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position:left;
+}
+
+#aboutSection .title h1 {
+  background: #E91E63;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#aboutSection .addition {
+  background: #E91E63;
+}
+
+
+
+#venturesSection .title {
+  background: url("./images/Section2BG.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position:left;
+}
+
+#venturesSection .title h1 {
+  background: #2196F3;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#venturesSection .addition {
+  background: #2196F3;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+
+  #mobileHeaderContainer {
+    display: block;
+    position: fixed;
+    top: 0;
+    background: url("./images/headerBGMobile.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+    width: 100vw;
+    z-index: 100;
+  }
+  #mobileHeaderContainer .navLogo {
+    position: static;
+  }
+
+  .navBar {
+    top: 20vh;
+    height: 10vh;
+    background: #333;
+    box-shadow: 0 0 50px #000;
+    border-bottom: 6px solid #222;
+  }
+  .navBar .navLogo {
+    display: none;
+  }
+  .navBar a {
+    width: 25%;
+    font-size: 1.3em;
+  }
+  #homeNav {
+    color: #3F51B5;
+  }
+  #aboutNav {
+    color: #E91E63;
+  }
+  #venturesNav {
+    color: #2196F3;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .container {
+    flex-direction: column;
+    min-height: 70vh;
+  }
+  body:nth-child(2) {
+    padding-top: 30vh;
+  }
+  .subsection {
+    height: 35vh;
+    width: 100vw;
+  }
+
+
+  #aboutSection .title {
+
+  background: url("./images/Section1BGMobile.jpg")
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+
+  }
+
+  #venturesSection {
+    flex-flow: column-reverse;
+  }
+
+  #venturesSection .title {
+
+  background: url("./images/Section2BGMobile.jpg")
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+
+  }
+
+  .title h1 {
+
+    font-size: 35pt;
+
+  }
+
+  .addition {
+    font-size: 1.5em;
+  }
+
+}
