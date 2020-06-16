@@ -22,13 +22,13 @@ body {
   align-items: center;
   width: 100vw;
   height: 12%;
-  background: rgba(	63, 181, 161,0.8);
+  background: #111;
   z-index: 100;
 
 }
 
 .navLogo {
-  background: url("./images/GDLogo02.png");
+  background: url("./images/logo.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
