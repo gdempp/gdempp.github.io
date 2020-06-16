@@ -29,7 +29,7 @@ body {
 
 .navLogo {
   background: url("./images/logo.svg");
-  background-size: contain;
+  background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
 
