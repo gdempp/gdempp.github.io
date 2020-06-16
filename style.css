@@ -150,7 +150,7 @@ body {
   font-size: 50px;
   line-height: 1.2em;
   height: 1.2em;
-  background: #3F51B5;
+  background: #222;
   overflow: hidden;
   padding-left: 80px;
   padding-right: 80px;
@@ -170,7 +170,7 @@ body {
 .line:nth-child(1){
 
   transform: skewX(30deg);
-  background: #F44336;
+  background: #333;
 
 }
 
