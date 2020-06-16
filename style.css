@@ -180,7 +180,7 @@ body {
 }
 .line:nth-child(3){
   transform: skew(20deg) translateX(28px);
-  background: #333);
+  background: #333;
 }
 .line:nth-child(4){
   transform: translateX(39px);
