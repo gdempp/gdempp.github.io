@@ -202,7 +202,6 @@ body {
 
   padding: 40px;
   color: #fff;
-  font-family: "Just Another Hand";
   font-size: 30pt;
   position: relative;
 
@@ -229,13 +228,13 @@ body {
 }
 
 #aboutSection .title h1 {
-  background: #E91E63;
+  background: #F65058FF;
   border-radius: 5px;
   padding: 20px;
 }
 
 #aboutSection .addition {
-  background: #E91E63;
+  background: #F65058FF;
 }
 
 
@@ -248,13 +247,13 @@ body {
 }
 
 #venturesSection .title h1 {
-  background: #2196F3;
+  background: #28334AFF;
   border-radius: 5px;
   padding: 20px;
 }
 
 #venturesSection .addition {
-  background: #2196F3;
+  background: #28334AFF;
 }
 
 
